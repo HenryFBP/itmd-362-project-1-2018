@@ -190,7 +190,7 @@ input {
   width: 100%;
   border: 0;
   line-height: 1;
-  padding: 13px; /* 44px(2*lh) - 18px(font) */
+  padding: 0.7222rem; /* {[44px(2*lineheight) - 18px(font)]px / 18} aka 13/18 = 0.72~ */
 }
 
 html {
