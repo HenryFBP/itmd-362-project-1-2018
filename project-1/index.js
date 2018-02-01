@@ -1,6 +1,6 @@
 log = function(it) {console.log(it);}
 
-let elems = ['#email','#phone','#birthday','#accept'];
+let elems = {"email":'#email', "phone":'#phone', "birthday":'#birthday', "accept":'#accept'};
 let nums = '0123456789'.split(''); // ['0', '1', '2', ..., '9']
 
 let problemsID = '#problems ol';
@@ -75,7 +75,7 @@ $('#sign-up').on('submit', function(e) { //someone wants to submit
   let valid = true;
   
   // check email
-  if(checkEmail($('#email').val()))
+  if(checkEmail($(elems["email"]).val()))
   {
     log('Email OK!');
     $(problemsID).append(invisLi);
@@ -83,12 +83,12 @@ $('#sign-up').on('submit', function(e) { //someone wants to submit
   else
   {
     valid = false;
-    $('#email').addClass('invalid');
-    $(problemsID).append(('<li><a href="#email">Email is invalid.</a></li>'));
+    $(elems["email"]).addClass('invalid');
+    $(problemsID).append(('<li><a href="' + elems["email"] + '">Email is invalid.</a></li>'));
   }
   
   // check phone
-  if(checkPhone($('#phone').val()))
+  if(checkPhone($(elems["phone"]).val()))
   {
     log('Phone OK!');
     $(problemsID).append(invisLi);
@@ -96,12 +96,12 @@ $('#sign-up').on('submit', function(e) { //someone wants to submit
   else
   {
     valid = false;
-    $('#phone').addClass('invalid');
-    $(problemsID).append(('<li><a href="#phone">Phone is invalid.</a></li>'));
+    $(elems["phone"]).addClass('invalid');
+    $(problemsID).append(('<li><a href="' + elems["phone"] + '">Phone is invalid.</a></li>'));
   }
   
   // check birthday
-  if(checkDate($('#birthday').val()))
+  if(checkDate($(elems["birthday"]).val()))
   {
     log('Birthday OK!');
     $(problemsID).append(invisLi);
@@ -109,11 +109,12 @@ $('#sign-up').on('submit', function(e) { //someone wants to submit
   else
   {
     valid = false;
-    $('#birthday').addClass('invalid');
+    $(elems["birthday"]).addClass('invalid');
     $(problemsID).append(('<li><a href="#birthday">Birthday is invalid.</a></li>'));
   }
   
-  if(checkBox($('#accept')))
+  // check TOS checkbox
+  if(checkBox($(elems["accept"])))
   {
     log('TOS Ok!');
     $(problemsID).append(invisLi);
@@ -121,8 +122,8 @@ $('#sign-up').on('submit', function(e) { //someone wants to submit
   else
   {
     valid = false;
-    $('#accept').addClass('invalid');
-    $(problemsID).append(('<li><a href="#accept">TOS must be accepted.</a></li>'));
+    $(elems["accept"]).addClass('invalid');
+    $(problemsID).append(('<li><a href="' + elems["accept"] + '">TOS must be accepted.</a></li>'));
   }
   
   if(valid)
