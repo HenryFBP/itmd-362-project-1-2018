@@ -15,10 +15,9 @@ function scontains(haystack, needle)
 
 function resetValidity(elems, c='invalid')
 {
-  for (var i = 0; i < elems.length; i++)
-  {
-    $(elems[i]).removeClass(c);
-  }
+  Object.keys(elems).forEach(key => {
+    $(elems[key]).removeClass(c);
+  });
 }
 
 function checkEmail(email, char='@')
