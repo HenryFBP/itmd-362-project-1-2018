@@ -3,19 +3,20 @@ html {
 
 }
 
+input {
+  background-color: grey !important;
+}
+
 p {
   background-color: #00FF00 !important;
 }
 
-label {
-  background-color: #00EF00 !important;
-}
-
 a {
   background-color: #00AA00 !important;
+  /* outline:1px dashed black !important; */
 }
 
-h1 {
+h1{
   background-color: #FFF000 !important;
 }
 
@@ -24,5 +25,6 @@ h2, h3, h4, h5, h6{
 }
 
 li {
-  background-color: #FF1000 !important;
+  background-color: pink !important;
+  /* outline: 1px dashed grey !important; */
 }
