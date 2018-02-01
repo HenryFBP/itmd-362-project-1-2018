@@ -270,6 +270,14 @@ li li:last-child {
 
 /* State Styles */
 
+#problems {
+  background-color: lightblue;
+}
+
+#submit:hover {
+  cursor: pointer;
+}
+
 .hidden {
   visibility: hidden;
   height: 0;
