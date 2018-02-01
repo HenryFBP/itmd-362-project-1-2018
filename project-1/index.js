@@ -31,32 +31,28 @@ function checkEmail(email, char='@')
 
 function checkPhone(phone)
 {
-  let valid = false;
-
   //if at least 1 number in phone number
   for(var i = 0; i < nums.length; i++)
   {
     if(scontains(phone,nums[i]))
     {
-      valid = true;
+      return true;
     }
   }
-  return valid;
+  return false;
 }
 
 function checkDate(date)
 {
-  let valid = false;
-
   //if at least 1 number in date
   for(var i = 0; i < nums.length; i++)
   {
     if(scontains(date,nums[i]))
     {
-      valid = true;
+      return true;
     }
   }
-  return valid;
+  return false;
 }
 
 function checkBox(box)
