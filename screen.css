@@ -7,3 +7,102 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* stylelint-enable */
 
 /* Begin site styles below */
+
+/* Base Styles */
+
+html {
+  font-size: 1.125em; /* 18 / 16 = 1.125 */
+  line-height: 1.222rem; /* 22 / 18 = 1.222~ */
+}
+
+body {
+  padding: 1.222rem; /* 22 / 18 = 1.222~ */
+}
+
+section {
+  padding-top: 0.6111rem;
+}
+
+form {
+  padding-top: 0.6111rem;
+}
+
+input {
+  background-color: lightgrey;
+}
+
+p {
+  padding-top: 0.6111rem;
+}
+
+h1 {
+  font-size: 2.25rem; /* 40.5 / 18 = 2.25 */
+  line-height: 3.0555rem; /* 55 / 18 = 3.0555~ */
+}
+
+h2 {
+  font-size: 1.5rem; /* 27 / 18 = 1.5 */
+  line-height: 1.8333rem; /* 33 / 18 = 1.833~ */
+}
+
+/* Layout Styles */
+
+/* Modular Styles */
+
+
+ol, ul {
+  padding-bottom: 0.611rem; /* 11 / 18 = 0.61~ */
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+ul {
+  list-style-type: square;
+}
+
+li ol,
+li ul {
+  /* padding-top: 0.611em;   /* 11 / 18 = 0.61~ */ */
+  /* padding-left: 1.222em;  /* 22 / 18 = 1.2~ */ */
+  /* padding-bottom: 0; */
+}
+
+li ol {
+  list-style-type: lower-alpha;
+}
+
+li li ol {
+  list-style-type: lower-roman;
+}
+
+li {
+  padding-bottom: 0.611rem; /* 11 / 18 = 0.6111111 */
+}
+
+li li:last-child {
+  padding-bottom: 0;
+}
+
+/* State Styles */
+
+#problems {
+  background-color: lightblue;
+}
+
+#submit:hover {
+  cursor: pointer;
+}
+
+.hidden {
+  visibility: hidden;
+  height: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.invalid {
+  outline-color: red;
+  outline-style: solid;
+}
