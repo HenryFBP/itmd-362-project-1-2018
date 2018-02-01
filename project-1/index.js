@@ -84,7 +84,7 @@ $('#sign-up').on('submit', function(e) { //someone wants to submit
   {
     valid = false;
     $('#email').addClass('invalid');
-    $(problemsID).append(('<li>Email is invalid.</li>'));
+    $(problemsID).append(('<li><a href="#email">Email is invalid.</a></li>'));
   }
   
   // check phone
@@ -97,7 +97,7 @@ $('#sign-up').on('submit', function(e) { //someone wants to submit
   {
     valid = false;
     $('#phone').addClass('invalid');
-    $(problemsID).append(('<li>Phone is invalid.</li>'));
+    $(problemsID).append(('<li><a href="#phone">Phone is invalid.</a></li>'));
   }
   
   // check birthday
@@ -110,7 +110,7 @@ $('#sign-up').on('submit', function(e) { //someone wants to submit
   {
     valid = false;
     $('#birthday').addClass('invalid');
-    $(problemsID).append(('<li>Birthday is invalid.</li>'));
+    $(problemsID).append(('<li><a href="#birthday">Birthday is invalid.</a></li>'));
   }
   
   if(checkBox($('#accept')))
@@ -122,7 +122,7 @@ $('#sign-up').on('submit', function(e) { //someone wants to submit
   {
     valid = false;
     $('#accept').addClass('invalid');
-    $(problemsID).append(('<li>TOS must be accepted.</li>'));
+    $(problemsID).append(('<li><a href="#accept">TOS must be accepted.</a></li>'));
   }
   
   if(valid)
