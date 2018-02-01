@@ -13,17 +13,17 @@ function scontains(haystack, needle)
   return (haystack.toString().indexOf(needle) !== -1);
 }
 
-function resetValidity(elems)
+function resetValidity(elems, c='invalid')
 {
   for (var i = 0; i < elems.length; i++)
   {
-    $(elems[i]).removeClass('invalid');
+    $(elems[i]).removeClass(c);
   }
 }
 
-function checkEmail(email)
+function checkEmail(email, char='@')
 {
-  if(scontains(email,'@'))
+  if(scontains(email, char))
   {
     return true;
   }
@@ -32,7 +32,7 @@ function checkEmail(email)
 
 function checkPhone(phone)
 {
-  valid = false;
+  let valid = false;
 
   //if at least 1 number in phone number
   for(var i = 0; i < nums.length; i++)
@@ -47,7 +47,7 @@ function checkPhone(phone)
 
 function checkDate(date)
 {
-  valid = false;
+  let valid = false;
 
   //if at least 1 number in date
   for(var i = 0; i < nums.length; i++)
@@ -62,9 +62,6 @@ function checkDate(date)
 
 function checkBox(box)
 {
-  log("checking this box:")
-  log(box)
-  
   return box["0"].checked;
 }
 
@@ -148,7 +145,7 @@ $('#sign-up').on('submit', function(e) { //someone wants to submit
 
 
 $('document').ready(function() {
-  log('Doc is ready!');
   
+  log('Doc is ready!');
   
 })
