@@ -1,11 +1,11 @@
 log = function(it) {console.log(it);}
 
-let elems = {"email":'#email', "phone":'#phone', "birthday":'#birthday', "accept":'#accept'};
-let nums = '0123456789'.split(''); // ['0', '1', '2', ..., '9']
+var elems = {"email":'#email', "phone":'#phone', "birthday":'#birthday', "accept":'#accept'};
+var nums = '0123456789'.split(''); // ['0', '1', '2', ..., '9']
 
-let problemsID = '#problems ol';
+var problemsID = '#problems ol';
 
-let invisLi = '<li class="hidden"></li>';
+var invisLi = '<li class="hidden"></li>';
 
 function scontains(haystack, needle)
 {
@@ -67,7 +67,7 @@ $('#sign-up').on('submit', function(e) { //someone wants to submit
   
   $(problemsID).empty();
   
-  let valid = true;
+  var valid = true;
   
   // check email
   if(checkEmail($(elems["email"]).val()))
@@ -125,7 +125,7 @@ $('#sign-up').on('submit', function(e) { //someone wants to submit
   {
     $('#problems').addClass('hidden');
     
-    let thanks = ('<p>Thank you, ' + $('#email').val() + '.</p>');
+    var thanks = ('<p>Thank you, ' + $('#email').val() + '.</p>');
     
     $('#sign-up').empty();
     
