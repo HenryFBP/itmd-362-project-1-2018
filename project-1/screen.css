@@ -294,3 +294,26 @@ li li:last-child {
   outline-color: red;
   outline-style: solid;
 }
+
+/* Media Queries */
+
+@media screen and (min-width: 640px) {
+  
+  body::before {
+    content: "Hello 640+ px user!"
+  }
+  
+  form > * {
+    display: grid;
+  }
+  
+  form li:nth-child(2n + 1) { /* every odd one*/
+    grid-column: 1;
+    padding-right: 1rem;
+  }
+  
+  form li:nth-child(2n) { /* every even one*/
+    grid-column: 2;
+  }
+
+}
