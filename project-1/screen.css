@@ -300,7 +300,7 @@ li li:last-child {
 @media screen and (min-width: 640px) {
   
   body::before {
-    content: "Hello 640+ px user!"
+    /* content: "Hello 640+ px user!" */
   }
   
   form > * {
