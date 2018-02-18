@@ -281,6 +281,10 @@ li li:last-child {
   background-color: lightblue;
 }
 
+#problems ol {
+  text-align: center;
+}
+
 #submit:hover {
   cursor: pointer;
 }
