@@ -191,6 +191,7 @@ input {
   border: 0;
   line-height: 1;
   padding: 0.7222rem; /* {[44px(2*lineheight) - 18px(font)]px / 18} aka 13/18 = 0.72~ */
+  background-color: #cccccc;
 }
 
 input[type="checkbox"] {
@@ -289,7 +290,7 @@ li li:last-child {
 /* State Styles */
 
 #problems {
-  background-color: lightblue;
+  background-color: lavender;
 }
 
 #problems ol {
