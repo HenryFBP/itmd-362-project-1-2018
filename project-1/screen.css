@@ -200,6 +200,7 @@ input[type="checkbox"] {
 }
 
 html {
+  font-family: 'Noto Sans';
   font-size: 1.125em; /* 18 / 16 = 1.125 */
   line-height: 1.222rem; /* 22 / 18 = 1.222~ */
 }
@@ -216,12 +217,22 @@ form {
   padding-top: 0.6111rem;
 }
 
+form * {
+  font-family: 'Ubuntu';
+}
+
 form li {
   background-color: lavender;
 }
 
 p {
   padding-top: 0.6111rem;
+}
+
+h1, h2, h3, h4, h5, h6 {  
+  text-align: center;
+  font-family: 'Archivo Black', sans-serif;
+  font-variant: small-caps;
 }
 
 h1 {
