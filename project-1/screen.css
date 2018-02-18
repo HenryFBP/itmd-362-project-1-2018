@@ -4,7 +4,6 @@
 */
 /* stylelint-disable*/
 a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}html{line-height:1}body{line-height:inherit}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
-/* stylelint-enable */
 
 
 /* Forms, taken from CSS normalize.
@@ -172,6 +171,7 @@ textarea {
   -webkit-appearance: button; /* 1 */
   font: inherit; /* 2 */
 }
+/* stylelint-enable */
 
 
 /* Begin site styles below */
@@ -253,9 +253,9 @@ ul {
 
 li ol,
 li ul {
-  /* padding-top: 0.611em;   /* 11 / 18 = 0.61~ */ */
-  /* padding-left: 1.222em;  /* 22 / 18 = 1.2~ */ */
-  /* padding-bottom: 0; */
+  padding-top: 0.611em;   /* 11 / 18 = 0.61~ */
+  padding-left: 1.222em;  /* 22 / 18 = 1.2~ */
+  padding-bottom: 0;
 }
 
 li ol {
@@ -300,21 +300,17 @@ li li:last-child {
 /* Media Queries */
 
 @media screen and (min-width: 640px) {
-  
   body::before {
     /* content: "Hello 640+ px user!" */
   }
-  
   form > * {
     display: grid;
     grid-column-gap: 1rem;
     grid-row-gap: 1rem;
   }
-  
   form li:nth-child(2n + 1) { /* every odd one*/
     grid-column: 1;
   }
-  
   form li:nth-child(2n) { /* every even one*/
     grid-column: 2;
   }
