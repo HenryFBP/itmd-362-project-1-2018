@@ -1,23 +1,95 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
   <head>
-    <title></title>
+    <title>Members Leading Members Slate</title>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no"/>
     <link type="text/css" rel="stylesheet" href="screen.css" />
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
     <!-- <link type="text/css" rel="stylesheet" href="../debug.css" />
     <link rel="stylesheet" href="//basehold.it/22" /> -->
   </head>
   <body>
     <header>
-      <h1>ITMD 362 Projects</h1>
+      <h1>Take back the Union!</h1>
     </header>
     <main>
-      <ul>
-        <li>
-          <a href="project-1/">Project 1</a>
-        </li>
-      </ul>
+      <section>
+        <h2>It’s time for Local 73 to hold elections now.</h2>
+        <p>
+          Over the past 3 years, our membership has endured incredible hardship
+          due to leadership infighting, followed by a disastrous trusteeship.
+        </p>
+        <p>
+          In the past year and a half, the trustees have failed to return power
+          to their members or exercise leadership.
+        </p>
+        <p>
+          Out of despair, members have felt compelled to file for
+          decertification from the Local in record numbers.
+        </p>
+        <p>
+          Staff are fractionalized and are under constant strain from a lack
+          of support from the trustees.
+        </p>
+        <p>
+          The trusteeship should be coming to an end, instead of preparing the
+          membership for self governance, like they promised, the Trustees are
+          trying to extend the trusteeship or merge our local with Local 1
+          and/or HCII.
+        </p>
+        <p>
+          All of this in spite of the fact that Local 73 members have repeatedly
+          demanded elections and have expressed their anger clearly in the past
+          4 membership meetings in 2017.
+        </p>
+        <p>
+          It is unfortunate that the International Union and the Trustees are
+          not listening.
+        </p>
+        <p>
+          For these reasons, we have launched our slate and have sent a strong
+          message to the International Union in a petition that this Union
+          belongs to us. 
+        </p>
+        <p>
+          We demand an election right now!
+        </p>
+      </section>
+      <form id="sign-up" action="#null" method="get">
+        <ol>
+          <li>
+            <label for="email">Email</label>
+            <input pattern="^(.+?)@(.+?)$" type="email" id="email" name="email" />            
+          </li>
+          <li>
+            <label for="phone">Phone</label>
+            <input pattern=".+?(\d+?)" type="tel" id="phone" name="phone" />            
+          </li>
+          <li>
+            <label for="birthday">Birthday</label>
+            <input type="date" id="birthday" name="birthday"/>
+          </li>
+          <li>
+            <label for="accept">I accept the <a href="https://simple.wikipedia.org/wiki/Ten_Commandments">TOS</a></label>
+            <input type="checkbox" id="accept" name="accept"/>
+          </li>
+        </ol>
+        <input id="submit" type="submit" value="Join the fight for your union!"/>
+      </form>
     </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+    <section id="problems" class="hidden">
+      <h2>
+        Problems:
+      </h2>
+      <ol>
+        
+      </ol>
+      
+    </section>
   </body>
 </html>
